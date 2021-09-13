@@ -4,11 +4,18 @@ using UnityEngine;
 
 namespace UI
 {
-    public class ButtonSettings : MonoBehaviour
+    internal class ButtonSettings : MonoBehaviour
     {
-        private void OpenSettingMenu()
+        [SerializeField] private GameObject _settingsPanel;
+
+        public void OpenSettingMenu()
         {
-            
+                _settingsPanel.SetActive(true);
+        }
+
+        public void CloseSettingsMenu()
+        {
+                _settingsPanel.SetActive(false);
         }
     }
 }
