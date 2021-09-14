@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace UI
 {
@@ -10,12 +8,12 @@ namespace UI
 
         public void OpenSettingMenu()
         {
-                _settingsPanel.SetActive(true);
+            _settingsPanel.SetActive(true);
         }
 
-        public void CloseSettingsMenu()
-        {
-                _settingsPanel.SetActive(false);
-        }
+        //public void CloseSettingsMenu()
+        //{
+        //    _settingsPanel.SetActive(false);
+        //}
     }
 }

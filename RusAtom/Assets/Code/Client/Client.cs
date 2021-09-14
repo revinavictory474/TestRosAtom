@@ -2,7 +2,6 @@
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using UnityEngine;
 
 public class Client 
 {
@@ -21,7 +20,7 @@ public class Client
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             socket.Connect(ipPoint);
 
-            byte[] data = new byte[256];
+            byte[] data = new byte[32];
             StringBuilder builder = new StringBuilder();
             int bytes = 0;
 
@@ -40,5 +39,7 @@ public class Client
             socket.Close();
         }
         catch (Exception ex) { }
+
+        
     }
 }
