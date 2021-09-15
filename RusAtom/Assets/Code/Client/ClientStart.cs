@@ -1,17 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
+﻿using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ClientView : MonoBehaviour
+public class ClientStart : MonoBehaviour
 {
-    public Text textIP;
-    public Client client;
-    public Animator animator;
+    [SerializeField] private Text textIP;
+    [SerializeField] private Client client;
+    [SerializeField] private Animator animator;
     private bool isConnected = false;
-
-   
 
     private void Update()
     {
@@ -29,8 +25,6 @@ public class ClientView : MonoBehaviour
         if (!animator.GetBool("isAnimated") && client.message == "Start")
         {
             animator.SetBool("isAnimated", true);
-            //client.message = "";
         }
-
     }
 }

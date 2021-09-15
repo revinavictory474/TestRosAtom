@@ -39,7 +39,5 @@ public class Client
             socket.Close();
         }
         catch (Exception ex) { }
-
-        
     }
 }

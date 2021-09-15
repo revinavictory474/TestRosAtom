@@ -10,10 +10,5 @@ namespace UI
         {
             _settingsPanel.SetActive(true);
         }
-
-        //public void CloseSettingsMenu()
-        //{
-        //    _settingsPanel.SetActive(false);
-        //}
     }
 }
